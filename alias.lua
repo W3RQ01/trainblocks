@@ -2,9 +2,9 @@
 --(important especially for Linuxworks server)
 
     for count = 1, 10, 1 do
-      minetest.register_alias("advtrains_subwayblocks:line" .. count, "trainblocks:line" .. count)
+      minetest.register_alias("advtrains_subwayblocks:line" .. count, "trainblocks_bc:line" .. count)
     end
 
-    minetest.register_alias("advtrains_subwayblocks:germany", "trainblocks:subwayblock")
+    minetest.register_alias("advtrains_subwayblocks:germany", "trainblocks_bc:subwayblock")
 	
-	minetest.register_alias("advtrains_subwayblocks:mr", "trainblocks:mr")
+	minetest.register_alias("advtrains_subwayblocks:mr", "trainblocks_bc:mr")
