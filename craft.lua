@@ -3,7 +3,7 @@
 -- Blocks
 
 minetest.register_craft({
-	output = 'trainblocks_bc:subwayblock',
+	output = 'trainblocks:subwayblock',
 	recipe = {
 		{'', 'dye:blue', ''},
 		{'dye:white', 'default:glass', 'dye:white'},
@@ -12,7 +12,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'trainblocks_bc:sbahnblock',
+	output = 'trainblocks:sbahnblock',
 	recipe = {
 		{'', 'dye:orange', ''},
 		{'dye:white', 'default:glass', 'dye:white'},
@@ -26,7 +26,7 @@ local dyes2 = {"white", "white", "white", "white", "white", "black", "white", "w
 
 for count = 1, 10, 1 do
 minetest.register_craft({
-	output = "trainblocks_bc:line" .. count ..  " 4",
+	output = "trainblocks:line" .. count ..  " 4",
 	recipe = {
 		{'', "dye:" .. dyes1[count] , ''},
 		{"dye:" .. dyes2[count], 'default:glass', ''},
@@ -40,7 +40,7 @@ end
 --subway direction signs
 
 minetest.register_craft({
-	output = 'trainblocks_bc:subwaysignL 2',
+	output = 'trainblocks:subwaysignL 2',
 	recipe = {
 		{'', '', ''},
 		{'dye:white', 'default:glass', 'dye:blue'},
@@ -49,7 +49,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'trainblocks_bc:subwaysignR 2',
+	output = 'trainblocks:subwaysignR 2',
 	recipe = {
 		{'', '', ''},
 		{'dye:blue', 'default:glass', 'dye:white'},
@@ -60,7 +60,7 @@ minetest.register_craft({
 --sbahn direction signs
 
 minetest.register_craft({
-	output = 'trainblocks_bc:sbahnsignL 2',
+	output = 'trainblocks:sbahnsignL 2',
 	recipe = {
 		{'', '', ''},
 		{'dye:white', 'default:glass', 'dye:orange'},
@@ -69,7 +69,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'trainblocks_bc:sbahnsignR 2',
+	output = 'trainblocks:sbahnsignR 2',
 	recipe = {
 		{'', '', ''},
 		{'dye:blue', 'default:glass', 'dye:orange'},
