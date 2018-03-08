@@ -18,8 +18,8 @@
 
 --import file /craft.lua
 
-dofile(minetest.get_modpath("trainblocks") .. "/craft.lua")
-dofile(minetest.get_modpath("trainblocks") .. "/alias.lua")
+dofile(minetest.get_modpath("trainblocks_bc") .. "/craft.lua")
+dofile(minetest.get_modpath("trainblocks_bc") .. "/alias.lua")
 
 
 
@@ -27,7 +27,7 @@ dofile(minetest.get_modpath("trainblocks") .. "/alias.lua")
 
 --subwayblock germany
 
-minetest.register_node("trainblocks:subwayblock", {
+minetest.register_node("trainblocks_bc:subwayblock", {
     description = "Subwayblock",
 	light_source = 8,
     tiles = {
@@ -45,7 +45,7 @@ minetest.register_node("trainblocks:subwayblock", {
 
 --sbahn block
 
-minetest.register_node("trainblocks:sbahnblock", {
+minetest.register_node("trainblocks_bc:sbahnblock", {
     description = "Sbahnblock",
     light_source = 8,
 	tiles = {
@@ -64,7 +64,7 @@ minetest.register_node("trainblocks:sbahnblock", {
 --subway signs Line 1 to 10
 
 --[[for count = 1, 10, 1 do  
-minetest.register_node("trainblocks:line" .. count, {    
+minetest.register_node("trainblocks_bc:line" .. count, {    
     description = "Line " .. count,
 	drawtype = "nodebox",
 
@@ -88,7 +88,7 @@ end --]]
 --for bachwards-compatibility there has to be a signlike drawtype
 
 for count = 1, 10, 1 do  
- minetest.register_node("trainblocks:line" .. count, {
+ minetest.register_node("trainblocks_bc:line" .. count, {
 			     description = "Line ".. count,
 			  tiles = {"front_line" .. count .. ".png"},
 			  drawtype = "nodebox",
@@ -114,7 +114,7 @@ for count = 1, 10, 1 do
    
 --subway signs R and L
 
-minetest.register_node("trainblocks:subwaysignL", {
+minetest.register_node("trainblocks_bc:subwaysignL", {
 	description = "Subway Sign Left",
 	tiles = {
 		"subway_sign3.png",
@@ -140,7 +140,7 @@ minetest.register_node("trainblocks:subwaysignL", {
 	groups = {cracky = 3},
 })
 
-minetest.register_node("trainblocks:subwaysignR", {
+minetest.register_node("trainblocks_bc:subwaysignR", {
 	description = "Subway Sign Right",
 	tiles = {
 		"subway_sign3.png",
@@ -169,7 +169,7 @@ minetest.register_node("trainblocks:subwaysignR", {
 
 --subway signs R and L
 
-minetest.register_node("trainblocks:sbahnsignL", {
+minetest.register_node("trainblocks_bc:sbahnsignL", {
 	description = "SBahn Sign Left",
 	tiles = {
 		"sbahn_sign3.png",
@@ -195,7 +195,7 @@ minetest.register_node("trainblocks:sbahnsignL", {
 	groups = {cracky = 3},
 })
 
-minetest.register_node("trainblocks:sbahnsignR", {
+minetest.register_node("trainblocks_bc:sbahnsignR", {
 	description = "SBahn Sign Right",
 	tiles = {
 		"sbahn_sign3.png",
@@ -225,7 +225,7 @@ minetest.register_node("trainblocks:sbahnsignR", {
 
 --station signs
 
-minetest.register_node("trainblocks:stationsignR", {
+minetest.register_node("trainblocks_bc:stationsignR", {
 	description = "Station Sign Right",
 	tiles = {
 		"station_sign3.png",
@@ -251,7 +251,7 @@ minetest.register_node("trainblocks:stationsignR", {
 	groups = {cracky = 3},
 })
 
-minetest.register_node("trainblocks:stationsignL", {
+minetest.register_node("trainblocks_bc:stationsignL", {
 	description = "Station Sign Left",
 	tiles = {
 		"station_sign3.png",
@@ -277,7 +277,7 @@ minetest.register_node("trainblocks:stationsignL", {
 	groups = {cracky = 3},
 })
 
-minetest.register_node("trainblocks:stationsign", {
+minetest.register_node("trainblocks_bc:stationsign", {
 	description = "Station Sign",
 	tiles = {
 		"station_sign3.png",
@@ -307,7 +307,7 @@ minetest.register_node("trainblocks:stationsign", {
 --platform signs from 1 to 10
 
 for count = 1, 10, 1 do  
-minetest.register_node("trainblocks:platformsign" .. count, {    
+minetest.register_node("trainblocks_bc:platformsign" .. count, {    
     description = "Platform Sign " .. count,
 	drawtype = "nodebox",
 
@@ -332,7 +332,7 @@ end
 
 --gabriel's mountain railway block
 
-minetest.register_node("trainblocks:mr", {
+minetest.register_node("trainblocks_bc:mr", {
     description = "Mountain Railway Block",
     light_source = 8,
 	tiles = {
