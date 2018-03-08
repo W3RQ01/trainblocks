@@ -1,18 +1,21 @@
 
 --[[
 
-	Trainblocks
+	Trainblocks_bc
 	=============
-	This mod adds signs for the advanced trains mod by orwell
+	This mod adds signs for the advanced trains mod by orwell and it is bachwards-compatible to the advtrains_subwayblocks mod
 	
-	version 0.1 by maxx
+	version 0.3 by maxx and gpcf
 
-	Copyright (C) 2018 Maximilian Hipp and gpcf
+	Copyright (C) 2018 maxx and gpcf
 
 	See LICENSE.txt for more information
 
 	History:
 	2018-03-04  version 0.1  release
+	2018-03-05  version 0.2  added better node registrations and crafting receipes
+	2018-03-06  version 0.21 added alias
+	2018-03-07  version 0.3  removed alias in trainblocks and created trainblocks_bc for bachwards-compatibility | added new signs and blocks
 	
 ]]--
 
