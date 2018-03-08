@@ -282,32 +282,21 @@ minetest.register_node("trainblocks:stationsignL", {
 	groups = {cracky = 3},
 })
 
-minetest.register_node("trainblocks:stationsign", {
-	description = "Station Sign",
+minetest.register_node("trainblocks:station_block", {
+    description = "Station Block",
+    light_source = 8,
 	tiles = {
-		"station_sign3.png",
-		"station_sign3.png",
-		"station_sign3.png",
-		"station_sign3.png",
-		"station_sign.png",
-		"station_sign.png",
-	},
-	drawtype = "nodebox",
-	node_box = {
-		type = "fixed",
-		fixed = {
-			{ -8/16, -8/16, 6/16,  8/16,  8/16, 8/16},
-		},
-	},
-		
-	
-	paramtype2 = "facedir",
-	paramtype = 'light',
-	light_source = 6,
-	is_ground_content = false,
-	groups = {cracky = 3},
+        "down_station_sign.png",
+        "down_station_sign.png",
+        "front_station_sign.png",
+        "front_station_sign.png",
+        "front_station_sign.png",
+        "front_station_sign.png"
+    },
+    is_ground_content = true,
+    groups = {cracky = 3},
+    drop = "trainblocks:station_block"
 })
-
 
 --platform signs from 1 to 10
 
