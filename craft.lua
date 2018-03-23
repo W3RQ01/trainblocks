@@ -14,9 +14,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'trainblocks:sbahnblock',
 	recipe = {
-		{'', 'dye:orange', ''},
+		{'', 'dye:green', ''},
 		{'dye:white', 'default:glass', 'dye:white'},
-		{'', 'dye:orange', ''},
+		{'', 'dye:green', ''},
 	}
 })
 
@@ -63,7 +63,7 @@ minetest.register_craft({
 	output = 'trainblocks:sbahnsignL 2',
 	recipe = {
 		{'', '', ''},
-		{'dye:white', 'default:glass', 'dye:orange'},
+		{'dye:white', 'default:glass', 'dye:green'},
 		{'', '', ''},
 	}
 })
@@ -72,7 +72,7 @@ minetest.register_craft({
 	output = 'trainblocks:sbahnsignR 2',
 	recipe = {
 		{'', '', ''},
-		{'dye:blue', 'default:glass', 'dye:orange'},
+		{'dye:blue', 'default:glass', 'dye:green'},
 		{'', '', ''},
 	}
 })
