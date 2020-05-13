@@ -256,6 +256,32 @@ minetest.register_node("trainblocks:stationsignR", {
 	groups = {cracky = 3},
 })
 
+minetest.register_node("trainblocks:stationsignR_modern", {
+	description = "Station Sign Right (modern)",
+	tiles = {
+		"station_sign3.png",
+		"station_sign3.png",
+		"station_sign3.png",
+		"station_sign3.png",
+		"station_sign2_modern.png",
+		"station_sign2_modern.png",
+	},
+	drawtype = "nodebox",
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{ -8/16, -5/16, 6/16,  8/16,  5/16, 8/16},
+		},
+	},
+
+
+	paramtype2 = "facedir",
+	paramtype = 'light',
+	light_source = 6,
+	is_ground_content = false,
+	groups = {cracky = 3},
+})
+
 minetest.register_node("trainblocks:stationsignL", {
 	description = "Station Sign Left",
 	tiles = {
@@ -282,6 +308,32 @@ minetest.register_node("trainblocks:stationsignL", {
 	groups = {cracky = 3},
 })
 
+minetest.register_node("trainblocks:stationsignL_modern", {
+	description = "Station Sign Left (modern)",
+	tiles = {
+		"station_sign3.png",
+		"station_sign3.png",
+		"station_sign3.png",
+		"station_sign3.png",
+		"station_sign2_modern.png",
+		"station_sign2_modern.png^[transformFX",
+	},
+	drawtype = "nodebox",
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{ -8/16, -5/16, 6/16,  8/16,  5/16, 8/16},
+		},
+	},
+
+
+	paramtype2 = "facedir",
+	paramtype = 'light',
+	light_source = 6,
+	is_ground_content = false,
+	groups = {cracky = 3},
+})
+
 minetest.register_node("trainblocks:station_block", {
     description = "Station Block",
     light_source = 8,
@@ -298,9 +350,25 @@ minetest.register_node("trainblocks:station_block", {
     drop = "trainblocks:station_block"
 })
 
+minetest.register_node("trainblocks:station_block_modern", {
+    description = "Station Block (modern)",
+    light_source = 8,
+	tiles = {
+        "down_station_sign.png",
+        "down_station_sign.png",
+        "front_station_sign_modern.png",
+        "front_station_sign_modern.png",
+        "front_station_sign_modern.png",
+        "front_station_sign_modern.png",
+    },
+    is_ground_content = true,
+    groups = {cracky = 3},
+    drop = "trainblocks:station_block"
+})
+
 --platform signs from 1 to 10
 
-for count = 1, 10, 1 do  
+for count = 0, 10, 1 do
 minetest.register_node("trainblocks:platformsign" .. count, {    
     description = "Platform Sign " .. count,
 	drawtype = "nodebox",
