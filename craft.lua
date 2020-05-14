@@ -25,17 +25,15 @@ local dyes1 = {"blue", "red", "violet", "green", "orange", "yellow", "gray", "ma
 local dyes2 = {"white", "white", "white", "white", "white", "black", "white", "white", "white", "white"}
 
 for count = 1, 10, 1 do
-minetest.register_craft({
-	output = "trainblocks:line" .. count ..  " 4",
-	recipe = {
-		{'', "dye:" .. dyes1[count] , ''},
-		{"dye:" .. dyes2[count], 'default:glass', ''},
-		{'', '', ''},
-	}
-})
+	minetest.register_craft({
+		output = "trainblocks:line" .. count ..  " 4",
+		recipe = {
+			{'', "dye:" .. dyes1[count] , ''},
+			{"dye:" .. dyes2[count], 'default:glass', ''},
+			{'', '', ''},
+		}
+	})
 end
-
-
 
 --subway direction signs
 
@@ -72,7 +70,50 @@ minetest.register_craft({
 	output = 'trainblocks:sbahnsignR 2',
 	recipe = {
 		{'', '', ''},
-		{'dye:blue', 'default:glass', 'dye:green'},
+		{'dye:white', 'default:glass', 'dye:green'},
 		{'', '', ''},
 	}
+})
+
+
+-- Station direction signs
+
+minetest.register_craft({
+	output = 'trainblocks:stationsignL 2',
+	recipe = {
+		{'', '', ''},
+		{'dye:white', 'default:glass', 'dye:black'},
+		{'', '', ''}
+	}
+})
+
+minetest.register_craft({
+	output = 'trainblocks:stationsignR 2',
+	recipe = {
+		{'', '', ''},
+		{'dye:black', 'default:glass', 'dye:white'},
+		{'', '', ''}
+	}
+})
+
+-- Switch betwen modern station direction signs and older style
+minetest.register_craft({
+	type = "shapeless",
+	output = 'trainblocks:stationsignR_modern',
+	recipe = {'trainblocks:stationsignR'}
+})
+minetest.register_craft({
+	type = "shapeless",
+	output = 'trainblocks:stationsignL_modern',
+	recipe = {'trainblocks:stationsignL'}
+})
+minetest.register_craft({
+	type = "shapeless",
+	recipe = {'trainblocks:stationsignR_modern'},
+	output = 'trainblocks:stationsignR'
+})
+minetest.register_craft({
+	type = "shapeless",
+	recipe = {'trainblocks:stationsignL_modern'},
+	output = 'trainblocks:stationsignL'
 })
