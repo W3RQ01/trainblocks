@@ -35,6 +35,96 @@ for count = 1, 10, 1 do
 	})
 end
 
+-- Platform signs 0-10
+minetest.register_craft({
+	output = "trainblocks:platformsign0",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'', 'dye:white', ''},
+		{'', '' ,''}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign1",
+	recipe = {
+		{'dye:blue', 'default:glass', 'dye:white'},
+		{'', '', 'dye:white'},
+		{'', '' ,'dye:white'}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign2",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'dye:white', 'dye:white', ''},
+		{'', '' ,''}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign3",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'dye:white', 'dye:white', 'dye:white'},
+		{'', '' ,''}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign4",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'dye:white', 'dye:white', ''},
+		{'dye:white', 'dye:white' ,''}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign5",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'dye:white', 'dye:white', 'dye:white'},
+		{'dye:white', 'dye:white' ,''}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign6",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'dye:white', 'dye:white', 'dye:white'},
+		{'dye:white', 'dye:white' ,'dye:white'}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign7",
+	recipe = {
+		{'dye:blue', 'default:glass', 'dye:white'},
+		{'', '', 'dye:white'},
+		{'', 'dye:white' ,''}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign8",
+	recipe = {
+		{'dye:blue', 'default:glass', 'dye:white'},
+		{'dye:white', '', 'dye:white'},
+		{'dye:white', 'dye:white' ,'dye:white'}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign9",
+	recipe = {
+		{'dye:blue', 'default:glass', 'dye:white'},
+		{'', 'dye:white', 'dye:white'},
+		{'', '' ,'dye:white'}
+	}
+})
+minetest.register_craft({
+	output = "trainblocks:platformsign10",
+	recipe = {
+		{'dye:blue', 'default:glass', ''},
+		{'dye:white', '', ''},
+		{'dye:white', '' ,'dye:white'}
+	}
+})
+
 --subway direction signs
 
 minetest.register_craft({
