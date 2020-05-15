@@ -19,9 +19,13 @@
 	                         Added a modern station block with recipes
 	                         Added recipes for station blocks and signs.
 	                         Added platform 0 sign.
+	                         Added a setting to enable/disable crafting recipes.
 ]]--
 
-dofile(minetest.get_modpath("trainblocks") .. "/craft.lua")
+local crafting_disabled = minetest.settings:get_bool('trainblocks_disable_recipes')
+if not trainblocks_disable_recipes then
+	dofile(minetest.get_modpath("trainblocks") .. "/craft.lua")
+end
 dofile(minetest.get_modpath("trainblocks") .. "/alias.lua")
 
 minetest.register_node("trainblocks:subwayblock", {

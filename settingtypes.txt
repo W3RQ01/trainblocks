@@ -1,0 +1,3 @@
+# Disable crafting recipes. Server admins may want to disable crafting of the
+# blocks in this mod to restrict their use.
+trainblocks_disable_recipes (Disable crafting recipes) bool false
