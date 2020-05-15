@@ -8,18 +8,6 @@
 	Copyright (C) 2020 Montandalar/Blockhead
 
 	See LICENSE.txt for more information
-
-	History:
-	2018-03-04  version 0.1  release
-	2018-03-05  version 0.2  added better node registrations and crafting receipes
-	2018-03-06  version 0.21 added alias
-	2018-03-07  version 0.3  removed alias in trainblocks and created trainblocks_bc for bachwards-compatibility | added new signs and blocks
-	2020-05-15  version 0.4  Added fixed s-bahnblock texture and mod.conf from maxx
-	                         cleaned up code indentation,
-	                         Added a modern station block with recipes
-	                         Added recipes for station blocks and signs.
-	                         Added platform 0 sign.
-	                         Added a setting to enable/disable crafting recipes.
 ]]--
 
 local crafting_disabled = minetest.settings:get_bool('trainblocks_disable_recipes')
