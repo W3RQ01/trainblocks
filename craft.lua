@@ -20,6 +20,26 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = 'trainblocks:station_block',
+	recipe = {
+		{'', 'dye:black', ''},
+		{'dye:white', 'default:glass', 'dye:white'},
+		{'', 'dye:black', ''},
+	}
+})
+--Swap with modern blocks
+minetest.register_craft({
+	type = 'shapeless',
+	output = 'trainblocks:station_block_modern',
+	recipe = {'trainblocks:station_block'}
+})
+minetest.register_craft({
+	type = 'shapeless',
+	recipe = {'trainblocks:station_block_modern'},
+	output = 'trainblocks:station_block'
+})
+
 --lineblocks from 1 to 10
 local dyes1 = {"blue", "red", "violet", "green", "orange", "yellow", "gray", "magenta", "cyan", "black"}
 local dyes2 = {"white", "white", "white", "white", "white", "black", "white", "white", "white", "white"}
