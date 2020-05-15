@@ -1,5 +1,8 @@
 # trainblocks
-This mod for minetest adds various signs and blocks related to railways, including crafting recipes for all of them.
+
+Trainblocks mod for minetest. [Original by maxxhipp](https://github.com/maxhipp/trainblocks_bc ), additions by Montandalar.
+
+This mod for minetest adds various signs and blocks related to railways, including crafting recipes for all of them. All of the blocks emit light.
 
 Features:
 
