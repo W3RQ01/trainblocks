@@ -41,7 +41,7 @@ minetest.register_craft({
 })
 
 --lineblocks from 1 to 10
-local dyes1 = {"blue", "red", "violet", "green", "orange", "yellow", "gray", "magenta", "cyan", "black"}
+local dyes1 = {"blue", "red", "violet", "green", "orange", "yellow", "grey", "magenta", "cyan", "black"}
 local dyes2 = {"white", "white", "white", "white", "white", "black", "white", "white", "white", "white"}
 
 for count = 1, 10, 1 do
