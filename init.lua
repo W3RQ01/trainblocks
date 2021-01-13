@@ -337,3 +337,32 @@ minetest.register_node("trainblocks:mr", {
 	groups = {cracky = 3},
 	drop = "trainblocks:sbahnblock"
 })
+
+local box_flat = {
+	type = "fixed",
+	--fixed = {-0.5, -0.5, -0.5,  0.5, -0.5, 0.5},
+	fixed = {-0.5000, -0.4375, -0.5000, 0.5000, -0.4375, 0.5000}
+}
+
+local pedsigns = {
+	{name = "no_pedestrians", desc = "No Pedestrians Sign"},
+	{name = "durchgang_verboten", desc = "No Pedestrians Sign (German)"}
+}
+
+for _,v in pairs(pedsigns) do
+	minetest.register_node("trainblocks:"..v.name, {
+		description = v.desc,
+		light_source = 2,
+		drawtype = "signlike",
+		paramtype = "light",
+		paramtype2 = "wallmounted",
+		tiles = {v.name..".png"},
+		inventory_image = v.name..".png",
+		wield_image = v.name..".png",
+		groups = {cracky = 3},
+		drop = "trainblocks:"..v.name,
+		is_ground_content = true,
+		node_box = box_flat,
+		selection_box = box_flat,
+	})
+end
