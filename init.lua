@@ -61,15 +61,20 @@ for count = 1, 10 do
 		drawtype = "nodebox",
 		tiles = {"front_line" .. count .. ".png"},
 		inventory_image = "inventory_line" .. count .. ".png",
-		light_source = 5,
-		groups = {cracky = 3},
-		paramtype2 = "facedir",
+		light_source = 12,
+		sunlight_propagates = true,
+		groups = {choppy = 2, attached_node = 1, oddly_breakable_by_hand = 3},
+		legacy_wallmounted = true,
+		is_ground_content = false,
+		paramtype2 = "wallmounted",
 		paramtype = 'light',
+		-- This node box def has to remain to preserve old worlds properly,
+		-- annoying as it is to be different from the platform signs.
 		node_box = {
-			type = "fixed",
-			fixed = {
-				{ -4/16, -4/16, 6/16,  4/16,  4/16, 8/16},
-			},
+			type = "wallmounted",
+			wall_top ={-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
+			wall_bottom = {-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
+			wall_side =  {-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
 		},
 	})
 end
@@ -107,10 +112,10 @@ minetest.register_node("trainblocks:subwaysignL", {
 	},
 	drawtype = "nodebox",
 	node_box = {
-		type = "fixed",
-		fixed = {
-			{ -8/16, -5/16, 6/16,  8/16,  5/16, 8/16},
-		},
+		type = "wallmounted",
+		wall_top ={-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
+		wall_bottom = {-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
+		wall_side =  {-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
 	},
 	paramtype2 = "facedir",
 	paramtype = 'light',
