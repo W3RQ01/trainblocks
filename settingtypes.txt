@@ -1,3 +1,7 @@
 # Disable crafting recipes. Server admins may want to disable crafting of the
 # blocks in this mod to restrict their use.
 trainblocks_disable_recipes (Disable crafting recipes) bool false
+
+# Puts a vibrant green texture on top of the s-bahn block, which used to be a
+# missing texture.
+trainblocks_legacy_sbahnblock (Legacy S-Bahn block) bool false

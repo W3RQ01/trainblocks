@@ -33,12 +33,16 @@ minetest.register_node("trainblocks:subwayblock", {
 })
 
 --sbahn block
+local sbahncolorize = ""
+if minetest.settings:get_bool("trainblocks_legacy_sbahnblock", false) then
+	sbahncolorize = "^[colorize:#00DF11FF"
+end --00E876FF
 
 minetest.register_node("trainblocks:sbahnblock", {
 	description = "Sbahnblock",
 	light_source = 8,
 	tiles = {
-		"down_sbahnblock.png",
+		"down_sbahnblock.png"..sbahncolorize,
 		"down_sbahnblock.png",
 		"front_sbahnblock.png",
 		"front_sbahnblock.png",
