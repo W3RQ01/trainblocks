@@ -19,7 +19,9 @@ Features:
 2018-03-05  version 0.2  added better node registrations and crafting receipes
 2018-03-06  version 0.21 added alias
 2018-03-07  version 0.3  removed alias in trainblocks and created trainblocks_bc for bachwards-compatibility | added new signs and blocks
-2020-05-15  version 0.4
+2020-05-15  version 0.4  Cleanups to README & recipes, new textures
+2021-01-14  version 0.4.1 'No pedestrians' signs; fixes for backwards
+compatibility with Line no. signs; legacy s-bahnblock mode
 
 * Added fixed s-bahnblock texture and mod.conf from maxx
 * Cleaned up code indentation,
