@@ -244,6 +244,7 @@ minetest.register_node("trainblocks:stationsignR_modern", {
 	light_source = 6,
 	is_ground_content = false,
 	groups = {cracky = 3},
+    drop = "trainblocks:station_block_modern",
 })
 
 minetest.register_node("trainblocks:stationsignL", {
