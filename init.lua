@@ -112,10 +112,10 @@ minetest.register_node("trainblocks:subwaysignL", {
 	},
 	drawtype = "nodebox",
 	node_box = {
-		type = "wallmounted",
-		wall_top ={-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
-		wall_bottom = {-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
-		wall_side =  {-0.5, -0.25, -0.25, -0.4375, 0.25, 0.25},
+		type = "fixed",
+		fixed = {
+			{ -8/16, -5/16, 6/16,  8/16,  5/16, 8/16},
+		},
 	},
 	paramtype2 = "facedir",
 	paramtype = 'light',
