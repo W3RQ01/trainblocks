@@ -5,7 +5,7 @@
 	version 0.3 by maxx and gpcf
 
 	Copyright (C) 2018 maxx and gpcf
-	Copyright (C) 2020 Montandalar/Blockhead
+	Copyright (C) 2020, 2021 Montandalar/Blockhead
 
 	See LICENSE.txt for more information
 ]]--
@@ -63,7 +63,12 @@ for count = 1, 10 do
 		inventory_image = "inventory_line" .. count .. ".png",
 		light_source = 12,
 		sunlight_propagates = true,
-		groups = {choppy = 2, attached_node = 1, oddly_breakable_by_hand = 3},
+		groups = {
+			choppy = 2,
+			attached_node = 1,
+			oddly_breakable_by_hand = 3,
+			not_blocking_trains = 1,
+		},
 		legacy_wallmounted = true,
 		is_ground_content = false,
 		paramtype2 = "wallmounted",
@@ -87,7 +92,7 @@ for count = 0, 10, 1 do
 		tiles = {"front_platform" .. count .. ".png"},
 		inventory_image = "inventory_platform" .. count .. ".png",
 		light_source = 5,
-		groups = {cracky = 3},
+		groups = {cracky = 3, not_blocking_trains = 1},
 		paramtype2 = "facedir",
 		paramtype = 'light',
 		node_box = {
@@ -365,7 +370,10 @@ for _,v in pairs(pedsigns) do
 		tiles = {v.name..".png"},
 		inventory_image = v.name..".png",
 		wield_image = v.name..".png",
-		groups = {cracky = 3},
+		groups = {
+			cracky = 3,
+			not_blocking_trains = 1
+		},
 		drop = "trainblocks:"..v.name,
 		is_ground_content = true,
 		node_box = box_flat,
