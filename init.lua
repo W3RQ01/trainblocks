@@ -6,6 +6,7 @@
 
 	Copyright (C) 2018 maxx and gpcf
 	Copyright (C) 2020, 2021 Montandalar/Blockhead
+	Copyright (C) 2025 W3RQ01
 
 	See LICENSE.txt for more information
 ]]--
@@ -52,6 +53,23 @@ minetest.register_node("trainblocks:sbahnblock", {
 	is_ground_content = true,
 	groups = {cracky = 3},
 	drop = "trainblocks:sbahnblock"
+})
+
+-- Milan subway system block
+minetest.register_node("trainblocks:milansubwayblock", {
+	description = "Milan Subwayblock",
+	light_source = 8,
+	tiles = {
+		"down_milan.png",
+		"down_milan.png",
+		"front_milan.png",
+		"front_milan.png",
+		"front_milan.png",
+		"front_milan.png"
+	},
+	is_ground_content = true,
+	groups = {cracky = 3},
+	drop = "trainblocks:milansubwayblock"
 })
 
 -- Subway signs Line 1 to 10

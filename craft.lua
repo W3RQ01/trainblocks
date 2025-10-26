@@ -12,6 +12,15 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = 'trainblocks:milansubwayblock',
+	recipe = {
+		{'', 'dye:red', ''},
+		{'dye:white', 'default:glass', 'dye:white'},
+		{'', 'dye:red', ''},
+	}
+})
+
+minetest.register_craft({
 	output = 'trainblocks:sbahnblock',
 	recipe = {
 		{'', 'dye:green', ''},
